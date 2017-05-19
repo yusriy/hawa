@@ -1,0 +1,413 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: air - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3B.bat" with contents
+[
+@echo off
+copy "hlp\air.cnt" .\Release
+]
+Creating command line "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3B.bat"
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3C.bat" with contents
+[
+@echo off
+echo. >"hlp\air.hm"
+echo // Commands (ID_* and IDM_*) >>"hlp\air.hm"
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Prompts (IDP_*) >>"hlp\air.hm"
+makehm IDP_,HIDP_,0x30000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Resources (IDR_*) >>"hlp\air.hm"
+makehm IDR_,HIDR_,0x20000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Dialogs (IDD_*) >>"hlp\air.hm"
+makehm IDD_,HIDD_,0x20000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Frame Controls (IDW_*) >>"hlp\air.hm"
+makehm IDW_,HIDW_,0x50000 resource.h >>"hlp\air.hm"
+]
+Creating command line "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3C.bat"
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3D.bat" with contents
+[
+@echo off
+start /wait hcw /C /E /M "hlp\air.hpj"
+if errorlevel 1 goto :Error
+if not exist "hlp\air.hlp" goto :Error
+copy "hlp\air.hlp" .\Release
+goto :done
+:Error
+echo hlp\air.hpj(1) : error:
+type "hlp\air.log"
+:done
+]
+Creating command line "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3D.bat"
+Creating command line "rc.exe /l 0x409 /fo"Release/air.res" /d "NDEBUG" "C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\air.rc"" 
+Copying contents file...
+        1 file(s) copied.
+Making help include file...
+Making help file...
+hlp\air.hpj(1) : error:
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+air.hpj
+    HC5011: Error: air.hpj : 
+ Cannot open the file "C:\Program Files\Microsoft Visual Studio\VC98\MFC\include\afxhelp.hm."
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/air.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\air.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airDoc.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\ChildFrm.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\data.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\Graph.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphDataColor.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphDataSet.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphLegend.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphLegendSet.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphPieLabel.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphSeries.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\grid.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\MainFrm.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\receptor.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack1.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack10.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack2.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack3.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack4.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack5.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack6.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack7.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack8.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack9.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3E.tmp" 
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/air.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP3F.tmp" 
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP40.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/air.pdb" /machine:I386 /out:"Release/air.exe" 
+".\Release\air.obj"
+".\Release\airDoc.obj"
+".\Release\airView.obj"
+".\Release\ChildFrm.obj"
+".\Release\data.obj"
+".\Release\Graph.obj"
+".\Release\GraphDataColor.obj"
+".\Release\GraphDataSet.obj"
+".\Release\GraphLegend.obj"
+".\Release\GraphLegendSet.obj"
+".\Release\GraphPieLabel.obj"
+".\Release\GraphSeries.obj"
+".\Release\grid.obj"
+".\Release\MainFrm.obj"
+".\Release\receptor.obj"
+".\Release\stack1.obj"
+".\Release\stack10.obj"
+".\Release\stack2.obj"
+".\Release\stack3.obj"
+".\Release\stack4.obj"
+".\Release\stack5.obj"
+".\Release\stack6.obj"
+".\Release\stack7.obj"
+".\Release\stack8.obj"
+".\Release\stack9.obj"
+".\Release\StdAfx.obj"
+".\Release\air.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP40.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+air.cpp
+airDoc.cpp
+airView.cpp
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(375) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(376) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(377) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(378) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(379) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(380) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(381) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(382) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(383) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(384) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(480) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(481) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(482) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(483) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(484) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(485) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(486) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(487) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(488) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(489) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(609) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(610) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(611) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(612) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(613) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(614) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(615) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(616) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(617) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(618) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(619) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(620) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(621) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(622) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(623) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(624) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(625) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(626) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(627) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(628) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+ChildFrm.cpp
+data.cpp
+Graph.cpp
+GraphDataColor.cpp
+GraphDataSet.cpp
+GraphLegend.cpp
+GraphLegendSet.cpp
+GraphPieLabel.cpp
+GraphSeries.cpp
+grid.cpp
+MainFrm.cpp
+receptor.cpp
+stack1.cpp
+stack10.cpp
+stack2.cpp
+stack3.cpp
+stack4.cpp
+Generating Code...
+Compiling...
+stack5.cpp
+stack6.cpp
+stack7.cpp
+stack8.cpp
+stack9.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+air.exe - 2 error(s), 40 warning(s)
+<h3>
+--------------------Configuration: air - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP42.bat" with contents
+[
+@echo off
+copy "hlp\air.cnt" .\Debug
+]
+Creating command line "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP42.bat"
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP43.bat" with contents
+[
+@echo off
+echo. >"hlp\air.hm"
+echo // Commands (ID_* and IDM_*) >>"hlp\air.hm"
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Prompts (IDP_*) >>"hlp\air.hm"
+makehm IDP_,HIDP_,0x30000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Resources (IDR_*) >>"hlp\air.hm"
+makehm IDR_,HIDR_,0x20000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Dialogs (IDD_*) >>"hlp\air.hm"
+makehm IDD_,HIDD_,0x20000 resource.h >>"hlp\air.hm"
+echo. >>"hlp\air.hm"
+echo // Frame Controls (IDW_*) >>"hlp\air.hm"
+makehm IDW_,HIDW_,0x50000 resource.h >>"hlp\air.hm"
+]
+Creating command line "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP43.bat"
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP44.bat" with contents
+[
+@echo off
+start /wait hcw /C /E /M "hlp\air.hpj"
+if errorlevel 1 goto :Error
+if not exist "hlp\air.hlp" goto :Error
+copy "hlp\air.hlp" .\Debug
+goto :done
+:Error
+echo hlp\air.hpj(1) : error:
+type "hlp\air.log"
+:done
+]
+Creating command line "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP44.bat"
+Creating command line "rc.exe /l 0x409 /fo"Debug/air.res" /d "_DEBUG" "C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\air.rc"" 
+Copying contents file...
+        1 file(s) copied.
+Making help include file...
+Making help file...
+hlp\air.hpj(1) : error:
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+air.hpj
+    HC5011: Error: air.hpj : 
+ Cannot open the file "C:\Program Files\Microsoft Visual Studio\VC98\MFC\include\afxhelp.hm."
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/air.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\air.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airDoc.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\ChildFrm.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\data.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\Graph.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphDataColor.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphDataSet.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphLegend.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphLegendSet.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphPieLabel.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\GraphSeries.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\grid.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\MainFrm.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\receptor.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack1.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack10.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack2.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack3.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack4.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack5.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack6.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack7.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack8.cpp"
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\stack9.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP45.tmp" 
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP46.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/air.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP46.tmp" 
+Creating temporary file "C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP47.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/air.pdb" /debug /machine:I386 /out:"Debug/air.exe" /pdbtype:sept 
+".\Debug\air.obj"
+".\Debug\airDoc.obj"
+".\Debug\airView.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\data.obj"
+".\Debug\Graph.obj"
+".\Debug\GraphDataColor.obj"
+".\Debug\GraphDataSet.obj"
+".\Debug\GraphLegend.obj"
+".\Debug\GraphLegendSet.obj"
+".\Debug\GraphPieLabel.obj"
+".\Debug\GraphSeries.obj"
+".\Debug\grid.obj"
+".\Debug\MainFrm.obj"
+".\Debug\receptor.obj"
+".\Debug\stack1.obj"
+".\Debug\stack10.obj"
+".\Debug\stack2.obj"
+".\Debug\stack3.obj"
+".\Debug\stack4.obj"
+".\Debug\stack5.obj"
+".\Debug\stack6.obj"
+".\Debug\stack7.obj"
+".\Debug\stack8.obj"
+".\Debug\stack9.obj"
+".\Debug\StdAfx.obj"
+".\Debug\air.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\YUSRIY~1\LOCALS~1\Temp\RSP47.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+air.cpp
+airDoc.cpp
+airView.cpp
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(375) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(376) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(377) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(378) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(379) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(380) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(381) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(382) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(383) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(384) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(480) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(481) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(482) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(483) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(484) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(485) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(486) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(487) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(488) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(489) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(609) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(610) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(611) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(612) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(613) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(614) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(615) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(616) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(617) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(618) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(619) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(620) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(621) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(622) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(623) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(624) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(625) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(626) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(627) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+C:\Documents and Settings\Yusri Yusup\My Documents\Visual Studio Projects\tempyusri18\air\airView.cpp(628) : warning C4244: '=' : conversion from 'long double' to 'long', possible loss of data
+ChildFrm.cpp
+data.cpp
+Graph.cpp
+GraphDataColor.cpp
+GraphDataSet.cpp
+GraphLegend.cpp
+GraphLegendSet.cpp
+GraphPieLabel.cpp
+GraphSeries.cpp
+grid.cpp
+MainFrm.cpp
+receptor.cpp
+stack1.cpp
+stack10.cpp
+stack2.cpp
+stack3.cpp
+stack4.cpp
+Generating Code...
+Compiling...
+stack5.cpp
+stack6.cpp
+stack7.cpp
+stack8.cpp
+stack9.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+air.exe - 2 error(s), 40 warning(s)
+</pre>
+</body>
+</html>

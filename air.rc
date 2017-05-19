@@ -1,0 +1,1345 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\air.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\air.ico"
+IDR_AIRTYPE             ICON    DISCARDABLE     "res\\airDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_SAVEASTEXTFILE_SAVEASMFILE
+    BUTTON      ID_SAVEASTEXTFILE_SAVEASTEXTFILE
+    SEPARATOR
+    BUTTON      ID_CALCULATE_CALCULATE
+    BUTTON      ID_DRAWGRAPH_DRAWGRAPH
+    BUTTON      ID_DRAWPIEGRAPH_DRAWPIEGRAPH
+    BUTTON      ID_DRAWTIMEDEPENDENTGRAPH_DRAWTIMEDEPENDENTGRAPH
+    SEPARATOR
+    BUTTON      ID_CONTEXT_HELP
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About HAWA...",              ID_APP_ABOUT
+    END
+END
+
+IDR_AIRTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    POPUP "Save &as..."
+    BEGIN
+        MENUITEM "Save as text file\tCtrl+F",   ID_SAVEASTEXTFILE_SAVEASTEXTFILE
+
+        MENUITEM "Save as Matlab .m file\tCtrl+M", 
+                                                ID_SAVEASTEXTFILE_SAVEASMFILE
+
+    END
+    POPUP "&Receptor"
+    BEGIN
+        MENUITEM "Receptor location",           ID_RECEPTOR_RECEPTORLOCATION
+    END
+    POPUP "Receptor &grid"
+    BEGIN
+        MENUITEM "Grid",                        ID_RECEPTORGRID_GRID
+    END
+    POPUP "&Data"
+    BEGIN
+        MENUITEM "Meteorological data",         ID_DATA_DATA
+    END
+    POPUP "Stac&ks"
+    BEGIN
+        MENUITEM "Stack 1 data",                ID_STACK1_STACK1DATA
+        MENUITEM "Stack 2 data",                ID_STACK2_STACK2DATA
+        MENUITEM "Stack 3 data",                ID_STACK3_STACK3DATA
+        MENUITEM "Stack 4 data",                ID_STACK4_STACK4DATA
+        MENUITEM "Stack 5 data",                ID_STACK5_STACK5DATA
+        MENUITEM "Stack 6 data",                ID_STACK6_STACK6DATA
+        MENUITEM "Stack 7 data",                ID_STACK7_STACK7DATA
+        MENUITEM "Stack 8 data",                ID_STACK8_STACK8DATA
+        MENUITEM "Stack 9 data",                ID_STACK9_STACK9DATA
+        MENUITEM "Stack 10 data",               ID_STACK10_STACK10DATA
+    END
+    POPUP "&Calculate"
+    BEGIN
+        MENUITEM "Calculate\tCtrl+L",           ID_CALCULATE_CALCULATE
+    END
+    POPUP "Draw &bar graph"
+    BEGIN
+        MENUITEM "Draw bar graph\tCtrl+B",      ID_DRAWGRAPH_DRAWGRAPH
+    END
+    POPUP "Draw &pie chart"
+    BEGIN
+        MENUITEM "Draw pie chart\tCtrl+G",      ID_DRAWPIEGRAPH_DRAWPIEGRAPH
+    END
+    POPUP "Draw &time-dependent graph"
+    BEGIN
+        MENUITEM "Draw time-dependent graph\tCtrl+T", 
+                                                ID_DRAWTIMEDEPENDENTGRAPH_DRAWTIMEDEPENDENTGRAPH
+
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About HAWA...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "B",            ID_DRAWGRAPH_DRAWGRAPH, VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_SAVEASTEXTFILE_SAVEASTEXTFILE, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "G",            ID_DRAWPIEGRAPH_DRAWPIEGRAPH, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_CALCULATE_CALCULATE, VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_SAVEASMFILE_SAVEASMFILE, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_DRAWTIMEDEPENDENTGRAPH_DRAWTIMEDEPENDENTGRAPH, 
+                                            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About HAWA"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "HAWA Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,15,20,20
+END
+
+IDD_RECEPTOR_DIALOG DIALOG DISCARDABLE  0, 0, 308, 313
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Receptor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,250,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,250,24,50,14
+    EDITTEXT        IDC_EDIT_X1,68,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y1,127,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z1,189,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X2,68,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y2,127,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z2,189,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X3,68,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y3,127,95,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z3,189,95,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X4,68,122,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y4,127,123,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z4,189,123,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X5,68,150,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y5,127,151,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z5,189,151,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X6,68,178,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y6,127,179,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z6,189,179,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X7,68,206,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y7,127,207,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z7,189,207,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X8,68,234,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y8,127,235,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z8,189,235,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X9,68,259,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y9,127,260,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z9,189,260,40,14,ES_AUTOHSCROLL
+    LTEXT           "Receptor 1",IDC_STATIC_RECEPTOR1,14,40,36,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_COORX,55,15,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_COORY,120,15,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC,185,15,57,8
+    LTEXT           "Receptor 2",IDC_STATIC_RECEPTOR2,14,68,36,8
+    LTEXT           "Receptor 3",IDC_STATIC_RECEPTOR3,14,96,36,8
+    LTEXT           "Receptor 4",IDC_STATIC_RECEPTOR4,14,124,36,8
+    LTEXT           "Receptor 5",IDC_STATIC_RECEPTOR5,14,152,36,8
+    LTEXT           "Receptor 6",IDC_STATIC_RECEPTOR6,14,180,36,8
+    LTEXT           "Receptor 7",IDC_STATIC_RECEPTOR7,14,208,36,8
+    LTEXT           "Receptor 8",IDC_STATIC_RECEPTOR8,14,236,36,8
+    LTEXT           "Receptor 9",IDC_STATIC_RECEPTOR9,14,262,36,8
+    EDITTEXT        IDC_EDIT_X10,68,284,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y10,127,286,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z10,189,286,40,14,ES_AUTOHSCROLL
+    LTEXT           "Receptor 10",IDC_STATIC_RECEPTOR10,14,286,40,8
+END
+
+IDD_STACK1_DIALOG DIALOG DISCARDABLE  0, 0, 320, 321
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS1,107,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS1,107,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS1,107,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q1,107,92,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK1,107,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY1,107,194,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,70,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,235,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,250,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,180,90,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN1,"Button",
+                    BS_AUTORADIOBUTTON,246,90,47,10
+    EDITTEXT        IDC_EDIT_STACKX1,249,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY1,249,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ1,249,193,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB1,249,270,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW1,249,295,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP1,105,270,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP1,105,288,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET1,105,235,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP1,7,22,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER1,7,
+                    45,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY1,7,
+                    68,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC1,7,91,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT1,7,170,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX1,180,145,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY1,180,170,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ1,180,196,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT1,180,271,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH1,180,300,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY1,7,196,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,260,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP1,7,275,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP1,7,292,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,7,235,
+                    91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,7,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,180,55,33,8
+    LTEXT           "Location of stack",IDC_STATIC,180,120,56,8
+    LTEXT           "Building downwash",IDC_STATIC,180,220,62,8
+END
+
+IDD_STACK2_DIALOG DIALOG DISCARDABLE  0, 0, 320, 331
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS2,107,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS2,107,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS2,107,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q2,107,92,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK2,107,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY2,107,194,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,70,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,243,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,258,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,180,89,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN2,"Button",
+                    BS_AUTORADIOBUTTON,246,89,47,10
+    EDITTEXT        IDC_EDIT_STACKX2,249,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY2,249,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ2,249,193,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB2,249,273,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW2,249,299,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP2,105,280,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP2,105,298,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET1,107,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,262,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,262,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP2,7,22,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER2,7,
+                    45,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY2,7,
+                    68,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC2,7,91,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT2,7,170,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX2,180,145,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY2,180,170,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ2,180,196,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT2,180,275,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH2,180,303,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY2,7,196,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,265,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP2,7,285,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP2,7,302,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,7,239,
+                    91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,7,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,180,55,33,8
+    LTEXT           "Location of stack",IDC_STATIC,180,120,56,8
+    LTEXT           "Building downwash",IDC_STATIC,180,225,62,8
+END
+
+IDD_STACK3_DIALOG DIALOG DISCARDABLE  0, 0, 320, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 3"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS3,107,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS3,107,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS3,107,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q3,107,92,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK3,107,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY3,107,194,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,70,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,245,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,260,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,175,88,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN3,"Button",
+                    BS_AUTORADIOBUTTON,241,88,47,10
+    EDITTEXT        IDC_EDIT_STACKX3,244,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY3,244,166,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ3,244,192,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB3,245,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW3,245,302,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP3,107,280,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP3,107,298,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET1,108,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP3,7,22,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER3,7,
+                    45,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY3,7,
+                    68,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC3,7,91,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT3,7,170,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX3,175,144,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY3,175,170,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ3,175,196,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT3,175,278,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH3,175,305,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY3,7,196,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,265,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP3,7,285,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP3,7,300,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,7,239,
+                    91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,7,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,177,55,33,8
+    LTEXT           "Location of stack",IDC_STATIC,175,120,56,8
+    LTEXT           "Building downwash",IDC_STATIC,175,230,62,8
+END
+
+IDD_DATA_DIALOG DIALOG DISCARDABLE  0, 0, 320, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Stack tip downwash",IDC_CHECK_TIPDOWNWASH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,20,80,10
+    CONTROL         "Urban (rural is default)",IDC_CHECK_RURALURBAN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,20,85,10
+    EDITTEXT        IDC_EDIT_PA,117,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TA,117,69,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_US,117,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DIRECTION,117,119,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME,270,70,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MIX,270,95,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WINDHEIGHT,270,120,40,14,ES_AUTOHSCROLL
+    CONTROL         "Very unstable",IDC_RADIO_A,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,205,59,10
+    CONTROL         "Moderately unstable",IDC_RADIO_C,"Button",
+                    BS_AUTORADIOBUTTON,110,205,80,10
+    CONTROL         "Slightly unstable",IDC_RADIO_E,"Button",
+                    BS_AUTORADIOBUTTON,225,205,67,10
+    CONTROL         "Neutral",IDC_RADIO_B,"Button",BS_AUTORADIOBUTTON,15,227,
+                    39,10
+    CONTROL         "Slightly stable",IDC_RADIO_D,"Button",
+                    BS_AUTORADIOBUTTON,110,227,59,10
+    CONTROL         "Stable",IDC_RADIO_F,"Button",BS_AUTORADIOBUTTON,225,227,
+                    36,10
+    EDITTEXT        IDC_EDIT_PRATE,270,165,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Atmospheric presurre (mb)",IDC_STATIC_PA,19,49,82,8
+    LTEXT           "Ambient temperature (K)",IDC_STATIC_TA,19,73,76,8
+    LTEXT           "Wind speed (m/s)",IDC_STATIC_US,19,97,57,8
+    LTEXT           "Height wind is recorded (m)",IDC_STATIC_WINDHEIGHT,165,
+                    120,86,8
+    LTEXT           "Wind direction (degrees)",IDC_STATIC_WINDDIRECTION,19,
+                    121,78,8
+    LTEXT           "Stability class",IDC_STATIC_STABILITY,15,185,43,8
+    LTEXT           "Mixing height (m)",IDC_STATIC_MIX,165,95,54,8
+    LTEXT           "Averaging time (min, 0 to 5 hrs)",IDC_STATIC_TIME,165,
+                    70,98,8
+    LTEXT           "Precipitation rate (mm/hr)",IDC_STATIC_PRATE,165,165,80,
+                    8
+    CONTROL         "Wet deposition",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,165,150,48,8
+END
+
+IDD_STACK4_DIALOG DIALOG DISCARDABLE  0, 0, 320, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 4"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS4,107,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS4,107,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS4,107,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q4,107,92,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK4,107,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY4,107,194,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,75,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,245,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,260,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,170,94,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN3,"Button",
+                    BS_AUTORADIOBUTTON,236,94,47,10
+    EDITTEXT        IDC_EDIT_STACKX4,244,145,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY4,244,171,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ4,244,197,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB4,244,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW3,244,302,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP4,105,285,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP4,105,303,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET1,105,240,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP4,7,22,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER4,7,
+                    45,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY4,7,
+                    68,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC4,7,95,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT4,7,170,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX4,170,149,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY4,170,175,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ4,170,201,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT4,170,280,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH4,170,305,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY4,7,196,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,270,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP4,7,289,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP4,7,306,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,7,239,
+                    91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,7,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,170,60,33,8
+    LTEXT           "Location of stack",IDC_STATIC,170,130,56,8
+    LTEXT           "Building downwash",IDC_STATIC,170,230,62,8
+END
+
+IDD_STACK5_DIALOG DIALOG DISCARDABLE  0, 0, 320, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 5"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS5,107,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS5,107,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS5,107,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q5,107,92,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK5,107,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY5,107,194,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,70,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,243,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,258,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,177,89,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN5,"Button",
+                    BS_AUTORADIOBUTTON,241,89,47,10
+    EDITTEXT        IDC_EDIT_STACKX5,244,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY5,244,166,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ5,244,192,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB5,244,278,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW5,244,305,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP5,107,285,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP5,107,305,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET5,107,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP5,7,22,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER5,7,
+                    45,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY5,7,
+                    68,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC5,7,95,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT5,7,170,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX5,175,144,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY5,175,170,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ5,175,196,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT5,177,281,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH5,177,308,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY5,7,196,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,270,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP5,5,289,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP5,5,307,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,7,239,
+                    91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,7,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,177,55,33,8
+    LTEXT           "Location of stack",IDC_STATIC,175,125,56,8
+    LTEXT           "Building downwash",IDC_STATIC,177,225,62,8
+END
+
+IDD_STACK6_DIALOG DIALOG DISCARDABLE  0, 0, 320, 326
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 6"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS6,117,9,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS6,117,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS6,117,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q6,117,84,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK6,117,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY6,117,188,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,65,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,235,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,250,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,180,85,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN6,"Button",
+                    BS_AUTORADIOBUTTON,245,85,47,10
+    EDITTEXT        IDC_EDIT_STACKX6,248,135,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY6,248,159,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ6,248,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB6,263,265,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW6,263,292,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP6,117,274,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP6,117,292,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET6,117,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP6,17,14,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER6,17,
+                    36,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY6,17,
+                    60,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC6,17,87,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT6,17,161,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX6,180,138,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY6,180,164,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ6,180,191,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT6,180,268,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH6,180,295,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY6,17,191,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,260,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP6,17,279,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP6,17,297,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,17,
+                    230,91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,17,215,48,8
+    LTEXT           "Plume rise",IDC_STATIC,180,50,33,8
+    LTEXT           "Location of stack",IDC_STATIC,180,115,56,8
+    LTEXT           "Building downwash",IDC_STATIC,180,220,62,8
+END
+
+IDD_STACK7_DIALOG DIALOG DISCARDABLE  0, 0, 320, 321
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 7"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS7,115,9,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS7,115,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS7,115,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q7,115,84,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK7,115,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY7,115,188,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,70,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,230,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,246,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS7,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,185,86,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN7,"Button",
+                    BS_AUTORADIOBUTTON,251,86,47,10
+    EDITTEXT        IDC_EDIT_STACKX7,255,135,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY7,255,159,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ7,255,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB7,255,260,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW7,255,287,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP7,115,268,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP7,115,287,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET7,115,236,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP7,17,14,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER7,17,
+                    36,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY7,17,
+                    60,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC7,17,87,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT7,17,161,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX7,185,138,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY7,185,164,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ7,185,191,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT7,185,263,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH7,185,290,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY7,17,191,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,255,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP7,17,273,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP7,17,292,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,17,
+                    233,91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,17,215,48,8
+    LTEXT           "Plume rise",IDC_STATIC,185,55,33,8
+    LTEXT           "Location of stack",IDC_STATIC,185,115,56,8
+    LTEXT           "Building downwash",IDC_STATIC,185,215,62,8
+END
+
+IDD_STACK8_DIALOG DIALOG DISCARDABLE  0, 0, 320, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 8"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS8,117,9,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS8,117,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS8,117,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q8,117,84,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK8,117,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY8,117,188,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,60,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,240,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,255,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS8,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,180,81,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN8,"Button",
+                    BS_AUTORADIOBUTTON,246,81,47,10
+    EDITTEXT        IDC_EDIT_STACKX8,248,135,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY8,248,159,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ8,248,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB8,248,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW8,248,302,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP8,117,279,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP8,117,297,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET8,117,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP8,17,14,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER8,17,
+                    36,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY8,17,
+                    60,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC8,17,86,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT8,17,161,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX8,180,138,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY8,180,164,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ8,180,191,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT8,180,278,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH8,180,305,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY8,17,191,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,265,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP8,17,284,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP8,17,302,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,17,
+                    239,91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,17,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,180,45,33,8
+    LTEXT           "Location of stack",IDC_STATIC,180,110,56,8
+    LTEXT           "Building downwash",IDC_STATIC,180,220,62,8
+END
+
+IDD_STACK9_DIALOG DIALOG DISCARDABLE  0, 0, 320, 331
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 9"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS9,117,9,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS9,117,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS9,117,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q9,117,84,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK9,117,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY9,117,188,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,65,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,233,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,248,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS9,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,180,85,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN9,"Button",
+                    BS_AUTORADIOBUTTON,246,85,47,10
+    EDITTEXT        IDC_EDIT_STACKX9,248,135,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY9,248,159,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ9,248,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB9,248,270,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW9,248,297,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP9,117,275,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP9,117,294,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET9,117,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP9,17,14,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER9,17,
+                    36,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY9,17,
+                    60,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC9,17,86,
+                    77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT9,17,161,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX9,180,138,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY9,180,164,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ9,180,191,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT9,180,271,
+                    58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH9,180,298,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY9,17,191,70,
+                    8
+    CONTROL         "Dry deposition",IDC_DEPOSITION9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,260,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP9,15,279,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP9,15,295,83,8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,15,
+                    233,91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,15,215,48,8
+    LTEXT           "Plume rise",IDC_STATIC,180,45,33,8
+    LTEXT           "Location of stack",IDC_STATIC,180,115,56,8
+    LTEXT           "Building downwash",IDC_STATIC,180,215,62,8
+END
+
+IDD_STACK10_DIALOG DIALOG DISCARDABLE  0, 0, 320, 331
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stack 10"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_TS10,117,9,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DS10,117,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VS10,117,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Q10,117,84,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACK10,117,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECAY10,117,188,40,14,ES_AUTOHSCROLL
+    CONTROL         "Buoyancy induced",IDC_CHECK_BUOYANCY10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,65,75,10
+    CONTROL         "Building downwash",IDC_CHECK_BUILDINGDOWNWASH10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,240,77,10
+    CONTROL         "Building location",IDC_CHECK_BUILDINGLOCATION10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,255,67,10
+    CONTROL         "Briggs",IDC_RADIO_BRIGGS10,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,182,86,35,10
+    CONTROL         "Schulman",IDC_RADIO_SCHULMAN10,"Button",
+                    BS_AUTORADIOBUTTON,246,86,47,10
+    EDITTEXT        IDC_EDIT_STACKX10,253,135,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKY10,253,159,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STACKZ10,253,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HB10,253,270,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HW10,253,297,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PP10,117,274,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP10,117,292,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WET10,117,242,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+    LTEXT           "Stack gas temperature (K)",IDC_STATIC_STACKTEMP10,17,14,
+                    83,8
+    LTEXT           "Stack inner diameter (m)",IDC_STATIC_INNERDIAMETER10,17,
+                    36,77,8
+    LTEXT           "Stack gas velocity (m/s)",IDC_STATIC_STACKVELOCITY10,17,
+                    60,77,8
+    LTEXT           "Volumetric flowrate (g/s)",IDC_STATIC_VOLUMETRIC10,17,
+                    86,77,8
+    LTEXT           "Stack height (m)",IDC_STATIC_STACKHEIGHT10,17,161,52,8
+    LTEXT           "Coordinate-X (km)",IDC_STATIC_STACKCOORX10,182,138,57,8
+    LTEXT           "Coordinate-Y (km)",IDC_STATIC_STACKCOORY10,182,164,57,8
+    LTEXT           "Coordinate-Z (km)",IDC_STATIC_STACKCOORZ10,182,191,57,8
+    LTEXT           "Building height (m)",IDC_STATIC_BUILDINGHEIGHT10,182,
+                    273,58,8
+    LTEXT           "Building width (m)",IDC_STATIC_BUILDINGWIDTH10,182,300,
+                    56,8
+    LTEXT           "Half life of pollutant (s)",IDC_STATIC_DECAY10,17,191,
+                    70,8
+    CONTROL         "Dry deposition",IDC_DEPOSITION10,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,260,61,10
+    LTEXT           "Particle density (g/cm3)",IDC_STATIC_PP10,17,279,75,8
+    LTEXT           "Particle diameter (micro-m)",IDC_STATIC_DP10,17,296,83,
+                    8
+    LTEXT           "Scavenging coefficient (hr/s-mm)",IDC_STATIC_WET1,17,
+                    239,91,18
+    LTEXT           "Wet deposition",IDC_STATIC_WET,17,220,48,8
+    LTEXT           "Plume rise",IDC_STATIC,182,45,33,8
+    LTEXT           "Location of stack",IDC_STATIC,182,116,56,8
+    LTEXT           "Building downwash",IDC_STATIC,182,222,62,8
+END
+
+IDD_GRID_DIALOG DIALOG DISCARDABLE  0, 0, 332, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grid"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_RLENGTH,110,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RAMOUNT,110,53,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RRING,110,79,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RELEVATION,110,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINX,230,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAXX,230,52,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINY,230,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAXY,230,103,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BETWEEN,230,129,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,275,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,275,24,50,14
+    LTEXT           "Length between circles (km)",IDC_STATIC_RLENGTH,27,28,
+                    73,17
+    LTEXT           "Amount of receptor in each circle",IDC_STATIC_RAMOUNT,
+                    27,51,77,18
+    LTEXT           "Amount of circles",IDC_STATIC_RRING,27,81,55,8
+    LTEXT           "Height from sea level (km)",IDC_STATIC_RELEVATION,27,
+                    105,70,19
+    LTEXT           "Min X value (km)",IDC_STATIC,169,28,54,8
+    LTEXT           "Max X value (km)",IDC_STATIC,169,54,56,8
+    LTEXT           "Min Y value (km)",IDC_STATIC,169,80,54,8
+    LTEXT           "Max Y value (km)",IDC_STATIC,169,106,56,8
+    LTEXT           "Distance in between X and Y (km)",IDC_STATIC,169,129,56,
+                    26
+    LTEXT           "Circular grid",IDC_STATIC,30,10,38,8
+    LTEXT           "X-Y grid (used in writing .m Matlab file)",IDC_STATIC,
+                    170,5,95,20
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HAWA Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HAWA\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HAWA.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "HAWA Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_RECEPTOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+
+    IDD_STACK1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_STACK2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_STACK3_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_DATA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_STACK4_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_STACK5_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_STACK6_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_STACK7_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_STACK8_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_STACK9_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_STACK10_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_GRID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "HAWA"
+    IDR_AIRTYPE             "\nHAWA\nHAWA\n\n\nHAWA.Document\nHAWA Document"
+    ID_DRAWGRAPH_DRAWGRAPH  "Draws bar graph\nDraws bar graph"
+    ID_DRAWPIEGRAPH_DRAWPIEGRAPH "Draws pie chart\nDraws pie chart"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "HAWA"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CALCULATE_CALCULATE  "Calculate\nCalculate"
+    ID_DRAWTIMEDEPENDENTGRAPH_DRAWTIMEDEPENDENTGRAPH 
+                            "Draws time-dependent graph\nDraws time-dependent graph"
+    ID_SAVEASTEXTFILE_SAVEASTEXTFILE "Save as text file\nSave as text file"
+    ID_SAVEASTEXTFILE_SAVEASMFILE 
+                            "Save as Matlab .m file\nSave as Matlab .m file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\air.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
